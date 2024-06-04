@@ -1,0 +1,1284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Header */
+
+.star img {
+    position: relative;
+    bottom: 50px;
+    left: 1600px;
+} 
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    /* gap: 80px; */
+}
+
+#home {
+    color: #FF5555;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    margin-right: -400px;
+    text-shadow: 0px 4px 2px  rgb(150, 147, 147);
+    
+    
+}
+
+.navbar .logo a {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 3rem;
+    /* margin-left: 50px; */
+    position: relative;
+    left: 130px;
+    
+}
+
+.navbar .links a {
+    font-size: 25px;
+}
+
+.navbar .toggle-btn {
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-button {
+    background-color: black;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 140px;
+    
+}
+
+.action-button:hover {
+    scale: 1.05;
+    color: white;
+}
+/* dropdown menu*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: gray;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* responsive navbar*/
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action-button{
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* Landing page part 01*/
+
+section {
+    margin-left: 230px;
+    margin-left: -130px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:900px 750px;
+    grid-template-rows: 700px;
+    margin-top: 50px;
+    margin-left: 320px;
+}
+
+.grid-left {
+    position: relative;
+}
+
+ .grid-left h1 {
+    position: absolute;
+    position: relative;
+    bottom: 550px;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.grid-left p {
+    position: relative;
+    bottom: 500px;
+    color: gray;
+    font-size: 30px;
+}
+
+.grid-left img {
+    position: relative;
+    bottom: 200px;
+    width: 600px;
+    left: 80px;
+}
+
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+
+#button-1 {
+    position: relative;
+    bottom: 450px;
+    background-color: black; 
+    color: white;
+    text-align: center; 
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+#button-2 {
+    position: relative;
+    bottom: 450px;
+    background-color: none;  
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+}
+
+.advertisement img {
+    width: 600px;
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+}
+
+/* Right Part */
+
+
+
+.right-image img{
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+}
+
+/* .circle img{
+    position: absolute;
+    position: relative;
+    bottom: 100px;
+}
+
+.shadow img{
+    position: absolute;
+    position: relative;
+    bottom: 1100px;
+    left: 200px;
+    
+} */
+/* .phone img{ */
+    /* position: absolute; */
+    /* position: relative;
+    bottom: 2200px;
+    right: 100px;
+} */
+
+/* .phone-two img{
+    position: absolute;
+    position: relative;
+    bottom: 3050px;
+    left: 90px;
+    top: 10px;
+
+}
+
+.phone-three img{
+    position: absolute;
+    position: relative; */
+    /* bottom: 4000px;
+    left: -30px;
+     */
+
+/* } */
+
+/* Landing page part one responsive  */
+ 
+
+@media (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:900px;
+        grid-template-rows: 750px;
+        margin-top: 50px;
+        margin-left: 520px;
+    }
+
+    .right-image img{
+        position: relative;
+        /* bottom: 150px; */
+        left: 100px;
+        top: 10px;
+    }
+
+    .navbar .logo {
+        margin-right: -400px;
+        text-shadow: 0px 4px 2px  rgb(150, 147, 147);
+        margin-left: 200px;  
+    }
+
+    .navbar .toggle-btn {
+        color: black;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media (max-width: 767px){
+
+    .grid-container {
+        display: grid;
+        grid-template-columns:1400px ;
+        grid-template-rows: 750px;
+        margin-top: 50px;
+        margin-left: 320px;
+    }
+
+    .grid-left h1 {
+        font-size: 120px;
+        text-align: center;
+    }
+
+    .grid-left p {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .navbar .logo {
+        margin-right: -400px;
+        text-shadow: 0px 4px 2px  rgb(150, 147, 147);
+        margin-left: 100px;  
+    }
+
+    .navbar .toggle-btn {
+        color: black;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        left: 700px;
+    }
+
+    .right-image img{
+        position: relative;
+        /* bottom: 150px; */
+        left: 250px;
+        top: 100px;
+        width: 1000px;
+    }
+
+    .advertisement {
+        position: relative;
+        left: 250px;
+        top: 100px;
+        
+    }
+
+    #button-1 {
+        position: relative;
+        left: 200px;
+        background-color: black; 
+        color: white;
+        text-align: center; 
+        height: 140px;
+        width: 400px;
+        border-radius: 10px;
+        padding: 3rem 5rem;
+        font-size: 36px;
+        display: flex;
+        gap: 10px;
+    }
+
+    #button-2 {
+        position: relative;
+        left: 200px;
+        background-color: none;  
+        height: 140px;
+        width: 400px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 3rem 4rem;
+        font-size: 36px;
+        display: flex;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .navbar .toggle-btn {
+        color: black;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        left: 1000px;
+    }
+}
+
+/* Landing page part 02*/
+
+
+.grid-container-two {
+    display: grid;
+    grid-template-columns: 800px 700px;
+    grid-template-rows: 700px;
+    margin-left: 320px;
+    margin-right: 200px;
+}
+
+.grid-left-two .phone {
+    position: absolute;
+    left: 40px;
+} 
+
+.grid-right-two .back {
+    position: absolute;
+    right: 10px;
+    
+}
+
+.Feature p{
+    margin-top: 120px;
+    margin-bottom: 10px;
+    color: #FF5555;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.premium {
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+.paragraph {
+    position: absolute;
+}
+
+.para .heading h2 {
+    color: black;
+    line-height: 80px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.para .mini-para p {
+    color: gray;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+/* Landing page part two responsive  */
+
+
+@media (max-width: 1700px) {
+
+ .grid-right-two .back img {
+    display: none;
+ }
+}
+
+@media (max-width: 1300px){
+    .grid-container-two {
+
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 700px 600px;
+        margin-left: 560px;
+        margin-right: 200px;
+    }
+
+    .grid-left-two .phone img {
+        position: relative;
+        left: 400px;
+    }
+
+    .Feature {
+        text-align: center;
+    }
+
+    .premium {
+        text-align: center;
+    }
+
+    .paragraph {
+        position: relative;
+
+    }
+
+    .para .heading h2 {
+        position: relative;
+        right: 50px;
+        
+    }
+
+    .para .mini-para p {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .Feature {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .premium {
+        text-align: center;
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+
+    .paragraph {
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .para .heading h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        right: 180px;
+        
+    }
+
+    .para .mini-para p {
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
+
+/* Landing page part 03*/
+
+.grid-container-three {
+    display: grid;
+    grid-template-columns: 800px 700px;
+    grid-template-rows: 700px;
+    margin-left: 320px;
+    margin-right: 200px;
+}
+
+.grid-left-three {
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.grid-left-three .advance p {
+    color: #FF5555;
+    font-size: 30px;
+}
+
+.Choose {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.grid-right-three .iphone13 img {
+    position: absolute;
+}
+
+.grid-container-three .para .mini-para p {
+    line-height: 35px;
+    font-size: 25px;
+}
+
+.on-hold {
+    position: relative;
+    top: 1px;
+    margin-left: 350px;
+}
+
+@media (max-width: 1300px){
+    .grid-container-three {
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 700px;
+        margin-left: 560px;
+        margin-right: 200px;
+    }
+
+    .advance {
+        text-align: center;
+        margin-top: 40px;
+        /* position: relative;
+        right: 30px; */
+    }
+
+    .Choose {
+        text-align: center;
+        /* position: relative;
+        right: 30px; */
+    }
+
+}
+
+@media (max-width: 1000px){
+    .grid-container-three {
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 700px;
+        margin-left: 560px;
+        margin-right: 200px;
+    }
+
+    .advance {
+        text-align: center;
+        margin-top: 80px;
+        /* position: relative;
+        right: 30px; */
+    }
+
+    .Choose {
+        text-align: center;
+        margin-top: 30px;
+        /* position: relative;
+        right: 30px; */
+    }
+
+}
+
+@media (max-width: 767px) {
+    .grid-left-three .advance p {
+        margin-top: 200px;
+        margin-bottom: -300px;
+    }
+
+    .grid-right-three .back-image img {
+        margin-top: 150px;
+    }
+
+    .grid-right-three .iphone13 img {
+        margin-top: -100px;
+    }
+
+    .advance {
+        text-align: center;
+        
+    }
+
+    .Choose {
+        text-align: center;
+        margin-top: 330px;
+    }
+}
+
+.on-hold {
+    position: relative;
+    bottom: 110px;
+    margin-left: 350px;
+    position: relative;
+    bottom: 350px;
+}
+
+@media (max-width: 400px) {
+    .on-hold {
+        position: relative;
+        bottom: 110px;
+        margin-left: 350px;
+        position: relative;
+        bottom: 350px;
+        display: none;
+    }
+}
+
+/* Landing page part 04*/
+
+.grid-container-four {
+    display: grid;
+    grid-template-columns: 800px 700px;
+    grid-template-rows: 700px;
+    margin-left: 320px;
+    margin-right: 200px;
+}
+
+.grid-container-four  .grid-left-four .grid-left-two .phone .visa img {
+    position: relative;
+    bottom: 600px;
+    left: 280px;
+}
+
+.grid-right-four .paragraph .para {
+    margin-top: 260px;
+}
+
+/* Responsive page part 04*/
+
+@media (max-width: 1300px) {
+
+.grid-container-four {
+    display: grid;
+    grid-template-columns: 800px ;
+    grid-template-rows: 700px;
+    margin-left: 560px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.grid-right-four .paragraph .para {
+    margin-top: 60px;
+}
+
+.visa {
+    margin-left: 410px;
+}
+
+}
+
+/* Landing page part 05*/
+
+.testa p {
+    text-align: center;
+    font-size: 30px;
+    color: #FF5555;
+}
+
+.users h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.testimonial .Feature p {
+    color: black;
+    text-align: center;
+}
+/*------------------------------------*/
+@media (max-width: 1300px){
+    .testa p {
+        text-align: center;
+        position: relative;
+        left: 250px;
+        margin-top: 50px;
+    }
+    
+    .users h1 {
+        /* text-align: center; */
+        position: relative;
+        left: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testa p {
+        text-align: center;
+        position: relative;
+        left: 500px;
+        
+    }
+    
+    .users h1 {
+        text-align: center;
+        position: relative;
+        left: 500px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .testa p {
+        text-align: center;
+        position: relative;
+        left: 700px;
+    }
+
+    .users h1 {
+        text-align: center;
+        position: relative;
+        left: 700px;
+        
+    }
+}
+
+/*------------------------------------*/
+/* Landing page part 05*/
+
+.grid-container-five {
+    display: grid;
+    grid-template-columns: 800px 700px;
+    grid-template-rows: 700px;
+    margin-left: 320px;
+    margin-right: 200px;
+}
+
+.grid-right-five .paragraph .para {
+    margin-top: 260px;
+}
+
+.para img {
+    margin-top: 20px;
+}
+
+.nick p {
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+/*------------------------------------*/
+@media (max-width: 1300px){
+    .grid-container-five {
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 700px;
+        margin-left: 560px;
+        margin-right: 200px;
+    }
+
+    .grid-right-five .paragraph .para .heading h2{
+        text-align: center;
+        margin-top: -200px;
+    }
+
+    .para img {
+        margin-left: 310px;
+    }
+    
+    .nick p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-right-five .paragraph .para .heading h2{
+        margin-left: 350px;
+    }
+
+    .para img {
+        position: relative;
+        right: 180px;
+    }
+}
+
+/* @media (max-width: 400px) {
+    .testimonial .testa p {
+        font-size: 200px;
+    }
+} */
+
+/*------------------------------------*/
+
+/* Landing page part 06*/
+
+.grid-left-three .FAQ P{
+    margin-left: 225px;
+    color: #FF5555;
+    font-size: 30px;
+}
+
+ .grid-left-three .Frequently h1{
+    margin-left: 225px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.grid-container-six {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 250px 250px 250px;
+    margin-left: 320px;
+    margin-right: 200px;
+    
+}
+
+.left-1 {
+    background-color:#FF5555;
+    width: 700px;
+    height: 250px;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem 2.5rem;
+    /* text-align: center; */
+}
+
+.left-1 h1 {
+    font-size: 2.5rem;
+
+}
+
+.left-1 p {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.right-1 {
+    
+        background-color:none;
+        width: 700px;
+        height: 250px;
+        border-radius: 20px;
+        color: black;
+        padding: 2rem 2.5rem;
+        /* text-align: center; */
+    }
+    
+    .right-1 h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    .right-1 p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 20px;
+        color: gray;
+    }
+
+    .left-2 {
+    
+        background-color:none;
+        width: 700px;
+        height: 250px;
+        border-radius: 20px;
+        color: black;
+        padding: 2rem 2.5rem;
+        /* text-align: center; */
+    }
+    
+    .left-2 h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    .left-2 p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 20px;
+        color: gray;
+    }
+
+    .right-2 {
+        background-color:#FF5555;
+        width: 700px;
+        height: 250px;
+        border-radius: 20px;
+        color: white;
+        padding: 2rem 2.5rem;
+        /* text-align: center; */
+    }
+    
+    .right-2 h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    .right-2 p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .left-3 {
+        background-color:#FF5555;
+        width: 700px;
+        height: 250px;
+        border-radius: 20px;
+        color: white;
+        padding: 2rem 2.5rem;
+        /* text-align: center; */
+    }
+    
+    .left-3 h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    .left-3 p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .right-3 {
+    
+        background-color:none;
+        width: 700px;
+        height: 250px;
+        border-radius: 20px;
+        color: black;
+        padding: 2rem 2.5rem;
+        /* text-align: center; */
+    }
+    
+    .right-3 h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    .right-3 p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 20px;
+        color: gray;
+    }
+
+    /*------------------------------------*/
+    /*-----------Responsive design-----------*/
+    
+    @media (max-width: 1000px) {
+        
+        .grid-left-three .FAQ P{
+            color: #FF5555;
+            font-size: 30px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 250px;
+        }
+        
+         .grid-left-three .Frequently h1{
+            font-weight: 800;
+            font-size: 50px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 250px;
+        }
+
+        .grid-container-six {
+            display: grid;
+            grid-template-columns: 800px;
+            grid-template-rows: 250px 250px 250px;
+            margin-left: 650px;
+            margin-right: 200px;
+            gap: 50px;
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 767px){
+        .grid-left-three .FAQ P{
+            color: #FF5555;
+            font-size: 30px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 350px;
+        }
+
+        .grid-left-three .Frequently h1{
+            font-weight: 800;
+            font-size: 30px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 350px;
+        }
+    }
+
+    @media (max-width: 450px){
+        .grid-left-three .FAQ P{
+            color: #FF5555;
+            font-size: 50px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 550px;
+        }
+
+        .grid-left-three .Frequently h1{
+            font-weight: 800;
+            font-size: 50px;
+            /* margin-left: 550px; */
+            text-align: center;
+            position: relative;
+            left: 540px;
+        }
+    }
+
+    /* -----------------Landing page part 07-----------*/
+    .frame {
+        position: relative;
+    }
+    
+    .frame img {
+        margin-left: 320px;
+        margin-top: 50px;
+        /* position: relative; */
+        text-align: center;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 400px;
+        left: 400px;
+        color: white;
+        font-size: 50px;
+    }
+
+    .text-2 {
+        position: absolute;
+        bottom: 300px;
+        left: 400px;
+        color: white;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .apple-btn {
+        position: absolute;
+        background-color: white;
+        width: 250px;
+        height: 70px;
+        bottom: 200px;
+        left: 400px;
+        border-radius: 10px;
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .apple-btn img {
+        position: absolute;
+        /* bottom: 100px;
+        left: 120px; */ 
+    }
+
+
+    /*------------Responsive Design --------------*/
+
+    @media (max-width: 1000px) {
+        .frame img {
+            width: 700px;
+            position: relative;
+            left: 250px;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 190px;
+            left: 600px;
+            color: white;
+            font-size: 25px;
+        }
+    
+        .text-2 {
+            position: absolute;
+            bottom: 100px;
+            left: 600px;
+            color: white;
+            font-size: 30px;
+            font-family: sans-serif;
+            display: none;
+        }
+
+        .apple-btn {
+            position: absolute;
+            background-color: white;
+            width: 250px;
+            height: 70px;
+            bottom: 100px;
+            left: 600px;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+    @media (max-width: 767px){
+        .frame img {
+            width: 700px;
+            position: relative;
+            left: 350px;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 190px;
+            left: 700px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .apple-btn {
+            position: absolute;
+            background-color: white;
+            width: 250px;
+            height: 70px;
+            bottom: 100px;
+            left: 700px;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+/* -----------------Landing page part 08-----------*/
+.bottom-bar {
+    display: grid;
+    grid-template-columns: 233px 233px 233px 233px 233px 233px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    margin-left: 370px;
+    margin-top: 100px;
+    font-weight: 700px;
+}
+
+.bottom-btn {
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #fff;
+} 
+
+.bottom-mail {
+    color: gray;
+}
+
+@media (max-width: 676px) {
+    .bottom-bar {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        margin-left: 370px;
+        margin-top: 100px;
+        font-weight: 700px;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    .bottom-bar {
+        display: grid;
+        grid-template-columns: 180px 180px 180px 180px 180px 180px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        margin-left: 370px;
+        margin-top: 100px;
+        font-weight: 700px;
+    }
+
+    
+}
+
+
+   
+    
+    
+    
+    
+
+
+
+
